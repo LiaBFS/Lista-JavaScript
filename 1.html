@@ -7,6 +7,40 @@
 </head>
 <body>
 
+    <div id="box">
+    <h1 id="titulo">Oque é JavaScript?</h1>
+
+    <p id="paragrafo">
+        a. Trazer mais iteratividade para páginas web. <br><br>
+        b.  <br>
+            - Navegador: o código é executado diretamente no navegador do usuário, é útil pra interações e feedback visual imediato. <br>
+            - Servidor: o código é executado em um servidor web ou servidor de aplicação, útil pra acessar e manipular o banco de dados, além de processar lógicas de negócio. <br><br>
+        c. É um ambiente isolado para testes e análise de malware. O sandbox serve para limitar o acesso do código JS no navegador, garantindo mais segurança sem prejudicar o sistema principal. <br><br>
+        d. São objetos definidos no escopo global (aqueles que são acessíveis de qualquer lugar no código) e são criados pelo ambiente de execução.
+    </p>
+
+    <h1 id="tituloHora">Hora atual:</h1><br>
+     <p id="hora"></p>
+
+    </div>
+
+    <script>
+
+        console.log("é pra isso aparecer no console")
+
+        alert("Oi")
+
+        function mostrarHora(){
+
+        const hora = new Date();
+        const horaFormatada = hora.toLocaleTimeString();
+        document.getElementById('hora').innerHTML = horaFormatada;
+
+        }
+
+        mostrarHora();
+        
+    </script>
     
     
 </body>
