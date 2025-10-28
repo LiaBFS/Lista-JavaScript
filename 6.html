@@ -15,15 +15,40 @@
         <label for="maximo">Valor Maximo</label>
         <input id="maximo" type="number" placeholder="Maximo">
 
-        <button id="acharPrimos" onclick="calcularPrimos()">Achar primos</button>
+        <button id="acharPrimos" onclick="calcularPrimos()">Achar primos</button><br>
 
     </div>
 
     <div id="resultados">
+        <h1>Dentro desse intervalo, os números primos são:</h1><br>
 
-
+        <p id="resultado"></p>
 
     </div>
 
 </body>
+    <script>
+
+        function calcularPrimos(){
+            let min = Number(minimo.value)
+            let max = Number(maximo.value)
+
+            if (isNaN(min) || isNaN(max) || min>=max){
+                alert("Digite valores válidos")
+                return
+            }
+
+            let intervalo = max-min;
+
+            for(indice=0; indice<intervalo; indice++){
+
+            
+
+            }
+
+        }
+
+    </script>
+
+
 </html>
