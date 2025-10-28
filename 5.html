@@ -40,6 +40,7 @@
 
     <script>
          const numSorteados = [];
+         let historico = document.querySelector(".historico")
         function sortear(){
 
            
@@ -69,6 +70,13 @@
               valor:numeroAleatorio,
               vezes:1
            })
+           historico.innerHTML = ""
+           
+           numSorteados.forEach( (e)=>{  historico.innerHTML+=", "+e.valor}
+
+           )
+           
+
 
 
 
